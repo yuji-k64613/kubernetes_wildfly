@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pos
+metadata:
+  name: wildfly
+  labels:
+    app: wildfly
+spec:
+  containers:
+  - name: wildfly
+    image: kube-wildfly:1.0
+    ports:
+    - containerPort: 8080
+    - containerPort: 9990
